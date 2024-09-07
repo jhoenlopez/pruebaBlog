@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "1dc81743-1937-4349-a379-02414792bed1",
+		"name": "pruebaBlog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "847458",
+		"_collection_link": "https://winter-star-7593.postman.co/workspace/Evaluaci%C3%B3n~ba8daecd-5469-496b-b39e-6d21b2dc22e5/collection/847458-1dc81743-1937-4349-a379-02414792bed1?action=share&source=collection_link&creator=847458"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"tipo\": \"AUTOR\",\r\n        \"nombres\": \"FREDDY2\",\r\n        \"apePaterno\": \"LOPEZ2\",\r\n        \"apeMaterno\": \"GOMEZ2\",\r\n        \"fechaNac\": null,\r\n        \"paisRes\": \"BOLIVIA\",\r\n        \"correo\": \"prueba\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/persona/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idPersona\": 1,\r\n        \"tipo\": \"AUTOR\",\r\n        \"nombres\": \"FREDDY3\",\r\n        \"apePaterno\": \"LOPEZ3\",\r\n        \"apeMaterno\": \"GOMEZ3\",\r\n        \"fechaNac\": null,\r\n        \"paisRes\": \"BOLIVIA\",\r\n        \"correo\": \"prueba\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/persona/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPersona\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/persona/get",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPersona\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/persona/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/persona/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAutor\": 6,\r\n    \"titulo\": \"SEGUNDO BLOG\",\r\n    \"tema\": \"EXAMEN\",\r\n    \"contenido\": \"EXAMEN DEL BANCO BISA 2T\",\r\n    \"periodicidad\": \"SEMANAL\",\r\n    \"swComentario\": \"V\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/blog/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blog",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBlog\": 3,\r\n    \"idAutor\": 6,\r\n    \"titulo\": \"SEGUNDO BLOG 3\",\r\n    \"tema\": \"EXAMEN\",\r\n    \"contenido\": \"EXAMEN DEL BANCO BISA SA\",\r\n    \"periodicidad\": \"SEMANAL\",\r\n    \"swComentario\": \"V\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/blog/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blog",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPersona\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/persona/get",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBlog\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/blog/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blog",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/blog/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blog",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
